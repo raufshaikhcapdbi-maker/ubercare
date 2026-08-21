@@ -34,7 +34,7 @@
     var name = document.getElementById("patientName").value.trim();
     var phone = document.getElementById("patientPhone").value.trim();
     var service = document.getElementById("serviceName").value.trim();
-    var branch = document.getElementById("branchName").value.trim();
+    var branch = "UberCare – Saboo Siddique Hospital Branch";
     var preferredTime = document.getElementById("preferredTime").value.trim();
     var notes = document.getElementById("notes").value.trim();
     var cleanedPhone = phone.replace(/[^\d]/g, "");
@@ -42,7 +42,7 @@
 
     appointmentForm.classList.add("was-validated");
 
-    if (!name || !isPhoneValid || !service || !branch || !preferredTime) {
+    if (!name || !isPhoneValid || !service || !preferredTime) {
       if (formStatus) {
         formStatus.textContent = "Please complete the required details before sending.";
       }
@@ -55,7 +55,7 @@
       "Name: " + name,
       "Mobile: " + phone,
       "Service: " + service,
-      "Preferred branch: " + branch,
+      "Branch: " + branch,
       "Preferred date/time: " + preferredTime
     ];
 
