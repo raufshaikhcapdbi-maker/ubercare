@@ -1,7 +1,7 @@
 (function () {
   "use strict";
 
-  var primaryWhatsappNumber = "919168283636";
+  var primaryWhatsappNumber = "917400068775";
   var appointmentForm = document.getElementById("appointmentForm");
   var formStatus = document.getElementById("formStatus");
   var yearTarget = document.getElementById("currentYear");
@@ -34,7 +34,7 @@
     var name = document.getElementById("patientName").value.trim();
     var phone = document.getElementById("patientPhone").value.trim();
     var service = document.getElementById("serviceName").value.trim();
-    var branch = "UberCare – Saboo Siddique Hospital Branch";
+    var branch = "UberCare – M.H. Saboo Siddique Hospital Branch";
     var preferredTime = document.getElementById("preferredTime").value.trim();
     var notes = document.getElementById("notes").value.trim();
     var cleanedPhone = phone.replace(/[^\d]/g, "");
